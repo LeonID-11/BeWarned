@@ -1,0 +1,325 @@
+@import "bourbon"
+@import "_var.sass"
+
+body
+	font-size: 16px
+	min-width: 970px
+	max-width: 1440px
+	line-height: 1.4
+	font-family: "ProximaNova-Regular", sans-serif
+	margin: 0 auto
+	overflow-x: scroll
+//верхнее меню
+.head
+	background-color: $main-color
+	height: 66px
+	border-bottom: solid #71973c 2px
+	display: block
+	//Лого сайта
+	.logo
+		display: block
+		>img
+			height: 40px
+			margin-top: 14px
+			margin-right: 31px
+	.wrap
+		display: block
+		// Поиск по сайту 
+		.search
+			display: inline-block
+			background-color: #73993d
+			margin-right: -5px
+			border-radius: 2px
+			//кнопка поиска
+			button
+				margin-left: 10px
+			button, input
+				border: none
+				background: none
+				height: 34px
+				outline: none
+			//поле ввода
+			input
+				font-size: 15px
+				color: #fff
+				margin-left: 12px
+		
+		//Оповещатели (месидж и колокольчик), а также аватарка и имя пользователя
+		.user
+			display: inline-block
+			margin-top: 10px
+			ul
+				list-style-type: none
+				margin: 0
+				padding: 0
+				li
+					display: inline-block
+				.message
+					margin-left: 30px
+				.event
+					margin-left: 30px
+					margin-right: 30px
+				.avatar
+					margin: 0
+				.name
+					font-size: 15px
+					color: #fff
+					
+.sect
+	background-color: #fff
+	
+	// Левая секция
+	.left-coll
+		width: 227px
+		display: inline-block
+		
+		// навигация
+		.nav
+			ul
+				list-style-type: none
+				margin: 0
+				padding: 0
+				
+				li
+					border-bottom: solid 1px #e0e2e6
+					height: 50px
+					width: 212px
+					display: block
+					line-height: 50px
+					a
+						text-decoration: none
+						color: #59606b
+						img
+							margin-right: 26px
+							
+		// Блок большой картинки
+		.Advertisement
+			border-bottom: solid 1px #e0e2e6
+			.Advertisement-head
+				color: #7c8695
+				font-size: 14px
+				margin: 20px 0
+			.img-text
+				color: #d3d3d3
+				font-size: 11px
+				margin: 8px 0 18px 0
+				
+		// Блок компаний
+		.Companies
+			border-bottom: solid 1px #e0e2e6
+			.companies-head
+				color: #7c8695
+				font-size: 14px
+				margin: 20px 0
+				display: inline-block
+			.company-see
+				float: right
+				font-size: 14px
+				display: inline-block
+				margin: 20px 0
+				color: #1c2534
+				text-decoration: none
+				
+			//item компании
+			.company-item
+				margin-bottom: -40px
+				img
+					display: inline-block
+					margin-bottom: 60px
+				.wrap-company
+					display: inline-block
+					margin-left: 4px
+					.company-name
+						color: #1c2534
+						margin: 0
+						padding: 0
+					.company-action, .company-addr
+						color: #7c8695
+						font-size: 14px
+						margin: 0
+						padding: 0
+					.company-follow
+						color: #1c2534
+						font-size: 12px
+						text-decoration: none
+						
+		// Копипаст, ссылки
+		.links
+			.copy
+				font-size: 12px
+				color: #b7bfcd
+				margin: 18px 0 20px 0
+			.use, .privacy
+				display: inline-block
+				color: #b7bfcd
+				font-size: 12px
+				text-decoration: none
+				ma
+			.privacy
+				margin-left: 20px
+				
+// Правая секция
+.right-coll
+	width: 227px
+	
+	// Друзья
+	.Friends
+		border-bottom: solid 1px #e0e2e6
+		width: 213px
+		.Friends-head
+			color: #7c8695
+			font-size: 14px
+			margin-top: 20px
+			margin-bottom: 15px
+			display: inline-block
+		.Friends-see
+			float: right
+			font-size: 14px
+			display: inline-block
+			margin-top: 20px
+			color: #1c2534
+			text-decoration: none
+			
+		//item друга
+		.Friends-item
+			margin-bottom: -40px
+			width: 213px
+			.friend-name
+				margin-bottom: 10px
+				padding: 0
+				margin: 0
+			img
+				display: inline-block
+				margin-bottom: 60px
+			.wrap-friend
+				display: inline-block
+				margin-left: 4px
+				width: 125px
+				.friend-work, .friend-addr
+					color: #7c8695
+					font-size: 14px
+					margin: 0
+					padding: 0
+				.friend-add
+					color: #1c2534
+					font-size: 12px
+					text-decoration: none
+					margin-bottom: 22px
+					
+	// Рекомендуемые товары
+	.product
+		border-bottom: solid 1px #e0e2e6
+		width: 213px
+		.product-head
+			color: #7c8695
+			font-size: 14px
+			margin: 20px 0 17px
+			display: inline-block
+		.product-see
+			float: right
+			font-size: 14px
+			display: inline-block
+			margin: 20px 0 17px
+			color: #1c2534
+			text-decoration: none
+			
+		//item товара
+		.product-item
+			width: 213px
+			margin-bottom: -40px
+			.product-name
+				padding: 0
+				margin: 0
+				padding-bottom: 5px
+				color: #1c2534
+				
+			img
+				display: inline-block
+				margin-bottom: 60px
+			.product-text
+				color: #7c8695
+				font-size: 14px
+				margin: 0
+				padding: 0
+				display: inline-block
+				margin-left: 4px
+				width: 125px
+				line-height: 1.2
+				
+	// Больщая картинка
+	.Advertisement-right
+		.AdvertisementRight-head
+			color: #7c8695
+			font-size: 14px
+			margin: 20px 0
+		.img-text
+			color: #d3d3d3
+			font-size: 11px
+			margin: 8px 0 18px 0
+			
+// Категории
+.center-coll
+	.wrap-center
+		display: block
+		.center-head
+			color: #1c2534
+			font-size: 30px
+			display: inline-block
+			float: left
+			margin-top: 10px
+			white-space: nowrap
+			overflow: hidden
+			text-overflow: ellipsis
+			width: 60%
+		.add-service
+			float: right
+			font-size: 14px
+			background-color: $main-color
+			border: none
+			height: 30px
+			width: 146px
+			border-radius: 4px
+			color: #fff
+			display: inline-block
+			margin-top: 11px
+			
+	//Общий border категорий
+	.categories
+		margin-left: -62px;
+		margin-right: -13px
+		border: solid 1px #e0e2e6
+		border-radius: 4px
+		display: block
+		height: auto
+		padding-left: 15px
+		display: inline-block
+		
+		//Категория
+		.categories-item
+			vertical-align: bottom
+			margin: 15px 13px 0 0
+			width: 140px
+			height: 200px
+			display: inline-block
+			text-decoration: none
+			color: #1c2534
+			font-size: 14px
+			&:hover, &:active, &:focus
+				color: #71973c
+				.img-wrap
+					background-color: #f4f7fb
+					
+			//border вокруг иконки категории
+			.img-wrap
+				width: 140px
+				border: solid 1px #e0e2e6
+				display: block
+				text-align: center
+				img
+					width: 140px
+					height: auto
+			p
+				margin-top: 14px
+				text-align: center
+				
+@import "_media.sass"
